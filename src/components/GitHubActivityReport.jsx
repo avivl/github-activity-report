@@ -102,7 +102,7 @@ const GitHubActivityReport = () => {
           </div>
           
           <div class="section">
-            <h2>Opened PRs</h2>
+            <h3>Opened PRs</h3>
             ${data.openedPRs.nodes.map(pr => `
               <div class="item">
                 <a href="${pr.url}">${pr.title}</a>
@@ -112,7 +112,7 @@ const GitHubActivityReport = () => {
           </div>
           
           <div class="section">
-            <h2>Reviewed PRs</h2>
+            <h3>Reviewed PRs</h3>
             ${data.reviewedPRs.nodes.map(pr => `
               <div class="item">
                 <a href="${pr.url}">${pr.title}</a>
@@ -122,7 +122,7 @@ const GitHubActivityReport = () => {
           </div>
           
           <div class="section">
-            <h2>Commented PRs</h2>
+            <h3>Commented PRs</h3>
             ${data.commentedPRs.nodes.map(pr => `
               <div class="item">
                 <a href="${pr.url}">${pr.title}</a>
